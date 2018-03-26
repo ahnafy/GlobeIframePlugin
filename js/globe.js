@@ -1,8 +1,4 @@
-/** -*- compile-command: "jslint-cli globe.js" -*-
- *
- * Authors:
- *  Cedric Pinson <cedric.pinson@plopbyte.com>
- */
+
 var Globe = function(canvas, options)
 {
     var hex2num = function(hex) {

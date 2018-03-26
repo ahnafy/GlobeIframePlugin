@@ -2,16 +2,19 @@
 <html>
 <head>
 <style>
-  body {
+    
+    body {
     overflow:hidden;
     margin:0;
     padding:0;
-  background: rgb(44,44,44);
+        background: rgb(44,44,44);
   overflow:hidden;
   padding:0;
   margin:0;
   color: white;
   }
+
+
 
   .vignette {
   -moz-box-shadow: inset 0px 0px 88px rgba(0,0,0,1.0);
@@ -23,7 +26,9 @@
   a:visited {text-decoration: none; color: black;}
   a:active {text-decoration: none; color: black;}
   a:hover {text-decoration: underline;  color: black;}
-
+        globeBackColor: "#396A92aa",
+       globeFrontColor: "#9AB4CBbb",
+       globeLinesColor: "#00000044",
 
 </style>
 
@@ -40,15 +45,15 @@
 window.addEventListener("load", function() {
     var options = {
        //globeBackColor: "#73514F55",
-       globeBackColor: "#DAA520",
-       globeFrontColor: "#FFD700",
-       globeLinesColor: "#800000",
+        globeBackColor: "#396A92aa",
+        globeFrontColor: "#9AB4CBbb",
+        globeLinesColor: "#00000044",
 
 //       width:1920,
 //       height:996,
 
        rotationIdleSpeedFactor: 10.0,
-       rotationSpeedFactor: 2.5,
+       rotationSpeedFactor: 2.0,
        wave: false
     };
 
