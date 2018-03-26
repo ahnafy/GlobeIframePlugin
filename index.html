@@ -2,11 +2,14 @@
 <html>
 <head>
 <style>
-    
+
+
+
     body {
     overflow:hidden;
     margin:0;
     padding:0;
+    <!-- Code does not function well when you change background to an image source -->
         background: rgb(44,44,44);
   overflow:hidden;
   padding:0;
@@ -26,6 +29,9 @@
   a:visited {text-decoration: none; color: black;}
   a:active {text-decoration: none; color: black;}
   a:hover {text-decoration: underline;  color: black;}
+
+  <!-- Dont understand why these are defined over here and what hover functions are there -->
+
         globeBackColor: "#396A92aa",
        globeFrontColor: "#9AB4CBbb",
        globeLinesColor: "#00000044",
@@ -40,6 +46,9 @@
 <script type="text/javascript" src="js/height.js"></script>
 <script type="text/javascript" src="js/country.js"></script>
 <script type="text/javascript" src="js/coast.js"></script>
+
+
+    <!-- changing color here for globeback/front/lines color does nothing. Too much changes makes globe crack -->
 
 <script type="text/javascript">
 window.addEventListener("load", function() {
@@ -58,6 +67,9 @@ window.addEventListener("load", function() {
     };
 
     var globe = new Globe(document.getElementById("3DView"),options);
+
+    <!-- Can add new image here and to make multiple places function -->
+
 
     var img = new Image();
     var items = [];
