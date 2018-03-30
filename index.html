@@ -54,9 +54,9 @@
 window.addEventListener("load", function() {
     var options = {
        //globeBackColor: "#73514F55",
-        globeBackColor: "#396A92aa",
-        globeFrontColor: "#9AB4CBbb",
-        globeLinesColor: "#00000044",
+        globeBackColor: "#FFD700FF",
+        globeFrontColor: "#800000FF",
+        globeLinesColor: "#FFD700FF",
 
 //       width:1920,
 //       height:996,
@@ -76,13 +76,14 @@ window.addEventListener("load", function() {
     img.onload = function() {
 
        // basic test usage
-       globe.addImage(48.8566667, 2.3509871, img);
-       globe.addImage(48.8566667, 2.3509871, img);
-       globe.addImage(48.8566667, 2.3509871, img);
-       globe.addImage(48.8566667, 2.3509871, img);
-       globe.addImage(48.8566667, 2.3509871, img);
-       globe.addImage(48.8566667, 2.3509871, img);
-       globe.addImage(48.8566667, 2.3509871, img);
+       globe.addImage(45.5919, -95.9189, img);
+       globe.addImage(45.5919, -95.9189, img);
+       globe.addImage(45.5919, -95.9189, img);
+       globe.addImage(45.5919, -95.9189, img);
+       globe.addImage(45.5919, -95.9189, img);
+       globe.addImage(45.5919, -95.9189, img);
+       globe.addImage(45.5919, -95.9189, img);
+
 
        // check it's in the tree
        if (globe.items.children.length !== 7) {
@@ -93,7 +94,7 @@ window.addEventListener("load", function() {
           alert("Should be 0, and is " + globe.items.children.length);
        }
 
-       items.push(globe.addImage(48.8566667, 2.3509871, img));
+       items.push(globe.addImage(45.5919, -95.9189, img));
        // check it's in the tree
        if (globe.items.children.length !== 1) {
           alert("Should be 1, and is " + globe.items.children.length);
@@ -104,10 +105,10 @@ window.addEventListener("load", function() {
           alert("Should be 0, and is " + globe.items.children.length);
        }
     };
-    img.src = "item.png";
+    img.src = "UMM_Cougars.png";
 
     window.setInterval(function() {
-          globe.addImage(48.8566667, 2.3509871, img, { color: [ 1.0, 0.2, 1.0, 0.4] }, function() { osg.log("Hit itemID " + this.itemID ); } );
+          globe.addImage(45.5919, -95.9189, img, { color: [ 1.0, 0.2, 1.0, 0.4] }, function() { osg.log("Hit itemID " + this.itemID ); } );
        }, 5000);
 
 },true);

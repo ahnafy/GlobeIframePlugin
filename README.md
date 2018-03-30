@@ -1,4 +1,6 @@
 Simple Globe Iframe mockup. The iframe is going to go in the international students page.
+Credit to cedricpinson @ https://github.com/cedricpinson/globe
+
 
 You can instanciate it like that:
 
