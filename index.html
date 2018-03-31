@@ -30,11 +30,6 @@ a:visited {text-decoration: none; color: black;}
 a:active {text-decoration: none; color: black;}
 a:hover {text-decoration: underline;  color: black;}
 
-<!-- Dont understand why these are defined over here and what hover functions are there -->
-
-globeBackColor: "#396A92aa",
-globeFrontColor: "#9AB4CBbb",
-globeLinesColor: "#00000044",
 
 </style>
 
@@ -48,7 +43,7 @@ globeLinesColor: "#00000044",
 <script type="text/javascript" src="js/coast.js"></script>
 
 
-    <!-- changing color here for globeback/front/lines color does nothing. Too much changes makes globe crack -->
+
 
 <script type="text/javascript">
 window.addEventListener("load", function() {
@@ -106,6 +101,7 @@ window.addEventListener("load", function() {
        }
     };
     img.src = "UMM_Cougars.png";
+ 
 
     window.setInterval(function() {
           globe.addImage(45.5919, -95.9189, img, {color: [1.0, 1.0, 1.0, 1.0]}, function() { osg.log("Hit itemID " + this.itemID ); } );
