@@ -342,8 +342,12 @@ Globe.prototype = {
         texture.setMinFilter('LINEAR');
         texture.setImage(image);
 
-        var w = 500000;
-        var h = 500000;
+        //default values
+        // var w = 500000;
+        // var h = 500000;
+
+        var w = 1500000;
+        var h = 1500000;
         var node = new osg.MatrixTransform();
         var geom = osg.createTexturedQuad(-w/2.0, -h/2.0, 0,
                                           w, 0, 0,

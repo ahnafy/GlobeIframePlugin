@@ -102,7 +102,8 @@ window.addEventListener("load", function() {
     };
     img.src = "UMM_Cougars.png";
  
-
+//see globe.js for definition of addImage method:
+//addImage: function(latitude, longitude, image, options, cb) {
     window.setInterval(function() {
           globe.addImage(45.5919, -95.9189, img, {color: [1.0, 1.0, 1.0, 1.0]}, function() { osg.log("Hit itemID " + this.itemID ); } );
        }, 5000);
